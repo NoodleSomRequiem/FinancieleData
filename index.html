@@ -5,53 +5,370 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Financiële spoofdata 2026</title>
   <style>
-    body{font-family:Arial,sans-serif;background:#f5f7fb;color:#1f2937;margin:0}
-    header{background:#0f172a;color:#fff;padding:32px}
-    main{padding:24px}
-    section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin-bottom:24px}
-    h1,h2{margin-top:0}
-    .table-wrap{overflow:auto}
-    table{border-collapse:collapse;width:100%;min-width:760px}
-    thead th{background:#e2e8f0;text-align:left;padding:12px;border-bottom:1px solid #cbd5e1}
-    tbody td{padding:10px 12px;border-bottom:1px solid #eef2f7}
-    tbody tr:nth-child(even){background:#f8fafc}
-    td.amount{text-align:right}
-    td.negative{color:#b91c1c;font-weight:600}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #0b1736;
+      color: white;
+      padding: 32px 40px;
+    }
+
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    main {
+      padding: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 36px;
+      color: #111827;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    th {
+      background: #e5e7eb;
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    .amount {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .negative {
+      color: #b91c1c;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
+
 <header>
   <h1>Financiële spoofdata 2026</h1>
   <p>Duidelijke HTML-tabellen voor Copilot Studio</p>
 </header>
 
 <main>
+
+  <section>
+    <h2>Totaal</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Periode</th>
+        <th>Omschrijving</th>
+        <th>Waarde</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>2026</td><td>Totale omzet</td><td class="amount">€ 12.450.000,00</td></tr>
+      <tr><td>2026</td><td>Totale directe kosten</td><td class="amount negative">€ 4.820.000,00</td></tr>
+      <tr><td>2026</td><td>Totale bedrijfskosten</td><td class="amount negative">€ 5.110.000,00</td></tr>
+      <tr><td>2026</td><td>EBITDA</td><td class="amount">€ 2.520.000,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
   <section>
     <h2>Omzet</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-        <tr>
-          <th>Datum</th>
-          <th>Omschrijving</th>
-          <th>Bedrag</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>01-01-2026</td>
-          <td>Omzet jan weekhelft 1</td>
-          <td class="amount">€ 69.083,11</td>
-        </tr>
-        <tr>
-          <td>04-01-2026</td>
-          <td>Omzet jan weekhelft 2</td>
-          <td class="amount">€ 63.791,74</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>01-01-2026</td><td>Omzet januari week 1</td><td class="amount">€ 69.083,11</td></tr>
+      <tr><td>04-01-2026</td><td>Omzet januari week 2</td><td class="amount">€ 63.791,74</td></tr>
+      <tr><td>11-01-2026</td><td>Omzet januari week 3</td><td class="amount">€ 71.450,00</td></tr>
+      <tr><td>18-01-2026</td><td>Omzet januari week 4</td><td class="amount">€ 74.920,33</td></tr>
+      <tr><td>25-01-2026</td><td>Omzet januari week 5</td><td class="amount">€ 68.332,90</td></tr>
+      <tr><td>01-02-2026</td><td>Omzet februari week 1</td><td class="amount">€ 72.118,44</td></tr>
+      <tr><td>08-02-2026</td><td>Omzet februari week 2</td><td class="amount">€ 73.225,11</td></tr>
+      <tr><td>15-02-2026</td><td>Omzet februari week 3</td><td class="amount">€ 75.993,28</td></tr>
+      </tbody>
+    </table>
   </section>
+
+  <section>
+    <h2>Directe kosten</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>01-01-2026</td><td>Inhuur uitvoering week 1</td><td class="amount negative">€ 21.550,00</td></tr>
+      <tr><td>08-01-2026</td><td>Inhuur uitvoering week 2</td><td class="amount negative">€ 20.980,00</td></tr>
+      <tr><td>15-01-2026</td><td>Projectspecifieke materiaalkosten</td><td class="amount negative">€ 12.340,00</td></tr>
+      <tr><td>22-01-2026</td><td>Operationele inzet externen</td><td class="amount negative">€ 18.420,00</td></tr>
+      <tr><td>29-01-2026</td><td>Implementatiekosten klantprojecten</td><td class="amount negative">€ 14.880,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Abonnementen</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Maand</th>
+        <th>Productgroep</th>
+        <th>Aantal klanten</th>
+        <th>Maandelijkse omzet</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>Januari 2026</td><td>Basis abonnement</td><td>145</td><td class="amount">€ 21.750,00</td></tr>
+      <tr><td>Januari 2026</td><td>Pro abonnement</td><td>96</td><td class="amount">€ 33.600,00</td></tr>
+      <tr><td>Januari 2026</td><td>Enterprise abonnement</td><td>28</td><td class="amount">€ 39.200,00</td></tr>
+      <tr><td>Februari 2026</td><td>Basis abonnement</td><td>149</td><td class="amount">€ 22.350,00</td></tr>
+      <tr><td>Februari 2026</td><td>Pro abonnement</td><td>99</td><td class="amount">€ 34.650,00</td></tr>
+      <tr><td>Februari 2026</td><td>Enterprise abonnement</td><td>29</td><td class="amount">€ 40.600,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Eenmalige projecten</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Projectcode</th>
+        <th>Projectnaam</th>
+        <th>Status</th>
+        <th>Projectomzet</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>PRJ-1001</td><td>Implementatie finance dashboard</td><td>Afgerond</td><td class="amount">€ 48.000,00</td></tr>
+      <tr><td>PRJ-1002</td><td>Migratie rapportageplatform</td><td>Lopend</td><td class="amount">€ 72.500,00</td></tr>
+      <tr><td>PRJ-1003</td><td>Data quality assessment</td><td>Afgerond</td><td class="amount">€ 26.750,00</td></tr>
+      <tr><td>PRJ-1004</td><td>Kostenanalyse supply chain</td><td>Lopend</td><td class="amount">€ 54.200,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Facilitair</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>03-01-2026</td><td>Huur kantoorlocatie hoofdkantoor</td><td class="amount negative">€ 12.500,00</td></tr>
+      <tr><td>05-01-2026</td><td>Schoonmaakdiensten</td><td class="amount negative">€ 1.850,00</td></tr>
+      <tr><td>10-01-2026</td><td>Gas water licht</td><td class="amount negative">€ 2.940,00</td></tr>
+      <tr><td>17-01-2026</td><td>Kantoorbenodigdheden</td><td class="amount negative">€ 1.120,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>ICT</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>02-01-2026</td><td>Cloud hosting platform</td><td class="amount negative">€ 6.800,00</td></tr>
+      <tr><td>06-01-2026</td><td>Softwarelicenties analytics</td><td class="amount negative">€ 4.250,00</td></tr>
+      <tr><td>13-01-2026</td><td>Beheer werkplekken</td><td class="amount negative">€ 2.980,00</td></tr>
+      <tr><td>20-01-2026</td><td>Cybersecurity monitoring</td><td class="amount negative">€ 3.760,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Marketing</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Campagne</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>07-01-2026</td><td>LinkedIn leadcampagne Q1</td><td class="amount negative">€ 5.400,00</td></tr>
+      <tr><td>14-01-2026</td><td>Contentproductie whitepaper</td><td class="amount negative">€ 2.150,00</td></tr>
+      <tr><td>21-01-2026</td><td>Webinar finance trends</td><td class="amount negative">€ 3.880,00</td></tr>
+      <tr><td>28-01-2026</td><td>Remarketingcampagne</td><td class="amount negative">€ 2.760,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Extern advies</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Adviseur</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>09-01-2026</td><td>Van Dijk Legal</td><td>Juridisch contractadvies</td><td class="amount negative">€ 4.500,00</td></tr>
+      <tr><td>16-01-2026</td><td>BrightTax Consulting</td><td>Fiscaal advies</td><td class="amount negative">€ 6.250,00</td></tr>
+      <tr><td>23-01-2026</td><td>People Advisory Group</td><td>HR compliance review</td><td class="amount negative">€ 3.950,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Volume</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Maand</th>
+        <th>Aantal orders</th>
+        <th>Gemiddelde orderwaarde</th>
+        <th>Volume-effect omzet</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>Januari 2026</td><td>412</td><td class="amount">€ 1.245,00</td><td class="amount">€ 38.200,00</td></tr>
+      <tr><td>Februari 2026</td><td>438</td><td class="amount">€ 1.260,00</td><td class="amount">€ 44.100,00</td></tr>
+      <tr><td>Maart 2026</td><td>455</td><td class="amount">€ 1.288,00</td><td class="amount">€ 49.850,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Mix-effect</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Maand</th>
+        <th>Segmentverschuiving</th>
+        <th>Financieel effect</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>Januari 2026</td><td>Meer enterprise klanten</td><td class="amount">€ 12.500,00</td></tr>
+      <tr><td>Februari 2026</td><td>Meer pro abonnementen</td><td class="amount">€ 9.850,00</td></tr>
+      <tr><td>Maart 2026</td><td>Minder basis abonnementen</td><td class="amount">€ 7.300,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Leegstandseffect</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Maand</th>
+        <th>Niet-billable uren</th>
+        <th>Financieel effect</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>Januari 2026</td><td>120</td><td class="amount negative">€ 8.400,00</td></tr>
+      <tr><td>Februari 2026</td><td>98</td><td class="amount negative">€ 6.860,00</td></tr>
+      <tr><td>Maart 2026</td><td>105</td><td class="amount negative">€ 7.350,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Bedrijfskosten</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Categorie</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>Personeel</td><td>Salarissen en sociale lasten</td><td class="amount negative">€ 1.850.000,00</td></tr>
+      <tr><td>Facilitair</td><td>Huur en huisvesting</td><td class="amount negative">€ 210.000,00</td></tr>
+      <tr><td>ICT</td><td>Software en infrastructuur</td><td class="amount negative">€ 310.000,00</td></tr>
+      <tr><td>Marketing</td><td>Campagnes en events</td><td class="amount negative">€ 420.000,00</td></tr>
+      <tr><td>Extern advies</td><td>Juridisch en fiscaal advies</td><td class="amount negative">€ 185.000,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>EBITDA</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Periode</th>
+        <th>Omschrijving</th>
+        <th>Bedrag</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td>2026</td><td>Omzet</td><td class="amount">€ 12.450.000,00</td></tr>
+      <tr><td>2026</td><td>Directe kosten</td><td class="amount negative">€ 4.820.000,00</td></tr>
+      <tr><td>2026</td><td>Brutomarge</td><td class="amount">€ 7.630.000,00</td></tr>
+      <tr><td>2026</td><td>Bedrijfskosten</td><td class="amount negative">€ 5.110.000,00</td></tr>
+      <tr><td>2026</td><td>EBITDA</td><td class="amount">€ 2.520.000,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
 </main>
+
 </body>
 </html>
